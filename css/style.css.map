@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CAAG",
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,kBAAkB;CAAG;;AACtC,AAAA,MAAM,CAAC;EACH,WAAW,EAAE,GAAG;CAAG;;AACvB,AAAA,QAAQ,CAAC;EACL,WAAW,EAAE,GAAG;CAAG;;AACvB,AAAA,KAAK,CAAC;EACF,WAAW,EAAE,GAAG;CAAG;;AACvB,AAAA,OAAO,CAAC;EACJ,WAAW,EAAE,0BAA0B;CAAG",
     "sources": [
         "../sass/style.sass",
-        "../sass/_grid.sass"
+        "../sass/_fonts.sass"
     ],
     "names": [],
     "file": "style.css"
