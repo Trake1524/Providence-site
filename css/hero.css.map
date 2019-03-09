@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,UAAU,EAAE,OAAO,CAAC,sBAAsB;CAAG",
+    "sources": [
+        "../sass/hero.sass"
+    ],
+    "names": [],
+    "file": "hero.css"
+}
