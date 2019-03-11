@@ -15,6 +15,17 @@
             height: 40px
             font-size: 16px
 .menu
+    display: none
+    position: absolute
+    top: 90px
+    padding: 10px 5px
+    background: #edf0f2
+    width: 120px
+    box-shadow: 1px 1px 5px 0px #c2c2c2
+    &__link
+        font-size: 20px
+        margin: 5px 0 0 0
+        display: block
     &-button 
         padding-top: 5px
         width: 20px
@@ -23,6 +34,7 @@
         align-items:center
         background: none
         border: none
+        margin-right: 5px
         
         &__line
             height: 1px 
@@ -34,4 +46,34 @@
     display: block
     margin-right: 35px
     
+@media (max-width: 1025px)
+    .menu
+        width: 150px
+        &__link
+            font-size: 24px
+    .tip
+        margin-right: 20px
+
+@media (max-width: 768px)
+    .menu
+        padding: 10px 15px
+        align-content: center
+        text-align: center
+        &__link
+            margin-top: 10px
+            font-size: 30px
+    .navbar__first-main-menu
+        display: none
+@media (max-width: 538px)
+    .menu
+        width: 100vw
+        box-shadow: none
+        border-bottom: 1px solid #c2c2c2
+    .navbar__second-main-menu
+        display: none  
+@media (max-width: 325px)
+    .blue-button
         
+        font-size: 10px
+        width: 70px
+        height: 30px
