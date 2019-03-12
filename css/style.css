@@ -48,6 +48,7 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
+    padding: 0 30px;
   }
 }
 
@@ -114,14 +115,23 @@ img {
 }
 
 .menu {
-  display: none;
   position: absolute;
   top: 90px;
   padding: 10px 5px;
   background: #edf0f2;
-  width: 120px;
+  max-width: 120px;
   -webkit-box-shadow: 1px 1px 5px 0px #c2c2c2;
           box-shadow: 1px 1px 5px 0px #c2c2c2;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(-160%);
+          transform: translateY(-160%);
+  z-index: -1;
+}
+
+.menu_active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .menu__link {
@@ -207,10 +217,11 @@ img {
 }
 
 .hero {
-  margin: -165px;
+  margin-top: -165px;
   height: 1000px;
   overflow: hidden;
-  background: #eff1f3 url(../img/Photo1.png);
+  background: #eff1f3 url(../img/Photo1.png) no-repeat;
+  background-size: cover;
 }
 
 .hero__text-hero {
@@ -242,14 +253,17 @@ img {
   border-radius: 30px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  margin-bottom: 65px;
 }
 
 .phone-pic {
   background: url(../img/iPhone6.png) no-repeat;
   background-size: contain;
-  height: 460px;
-  width: 390px;
-  margin: 70px auto 0 auto;
+  height: 445px;
+  max-width: 390px;
+  align-contant: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -262,13 +276,16 @@ img {
   .hero_description {
     font-size: 15px;
   }
+  .hero__watch-video {
+    margin-bottom: 95px;
+  }
 }
 
 @media (max-width: 700px) {
   .hero__text-hero {
-    width: 100vw;
+    width: 100%;
     padding: 0 10px;
-    margin-top: 140px;
+    margin-top: 190px;
   }
   .hero__title {
     font-size: 30px;
@@ -277,9 +294,12 @@ img {
   .hero_description {
     font-size: 8px;
   }
+  .hero__watch-video {
+    margin-bottom: 160px;
+  }
 }
 
-@media (max-width: 320px) {
+@media (maxwidth: 320px) {
   .phone-pic {
     width: 320px;
   }
